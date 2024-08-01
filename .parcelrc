@@ -1,0 +1,10 @@
+{
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "*.{css,pcss,postcss,scss,sass}": ["@parcel/transformer-postcss", "@parcel/transformer-sass"]
+  },
+  "optimizers": {
+    "*.{css,pcss,postcss,scss,sass}": ["@parcel/optimizer-css"]
+  },
+  "reporters": ["...", "parcel-reporter-static-files-copy"]
+}

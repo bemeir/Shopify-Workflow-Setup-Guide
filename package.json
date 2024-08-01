@@ -1,0 +1,38 @@
+{
+  "name": "workflow-2.0-shopify",
+  "version": "2.0.0",
+  "source": "src/index.js",
+  "@parcel/resolver-default": {
+    "packageExports": true
+  },
+  "scripts": {
+    "build": "NODE_ENV=production rm -rf .parcel-cache dist && node build-and-copy.js",
+    "watch": "NODE_ENV=development rm -rf .parcel-cache dist && node watch-and-copy.js"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "@shopify/prettier-plugin-liquid": "^1.5.0",
+    "@shopify/theme-check-browser": "^2.8.0",
+    "@shopify/theme-check-common": "^2.8.0",
+    "@shopify/theme-check-node": "^2.8.0",
+    "@splidejs/splide": "^4.1.4",
+    "@tailwindcss/forms": "^0.5.7",
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.4",
+    "lodash": "^4.17.21",
+    "parcel": "^2.12.0",
+    "parcel-reporter-static-files-copy": "^1.5.3",
+    "path-browserify": "^1.0.1",
+    "postcss": "^8.4.40",
+    "postcss-custom-properties": "^13.3.12",
+    "postcss-import": "^16.1.0",
+    "postcss-nesting": "^12.1.5",
+    "postcss-scss": "^4.0.9",
+    "postcss-url": "^10.1.3",
+    "prettier": "^3.3.3",
+    "process": "^0.11.10",
+    "swiper": "^11.1.8",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "tailwindcss": "^3.4.7"
+  }
+}
